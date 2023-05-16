@@ -20,14 +20,35 @@
     --rufous: hsl(2, 85%, 35%);
     --black: hsl(0, 0%, 0%);
     --white: hsl(0, 0%, 100%);
+
+    --ff-open-sans: 'Open Sans', sans-serif;
+--ff-barlow: 'Barlow', sans-serif;
+--ff-poppins: 'Poppins', sans-serif;
+}
+
+
+li { list-style: none !important; }
+
+a {
+    text-decoration: none !important;
+    color: inherit;
+  }
+body{
+    background-color: #6D34C5;
 }
 section{
-    background-color: #6D34C5;
+    background-color: #252935;
+    font-family: var(--ff-barlow);
 }
 p{
     color: white;
+    font-size: x-large;
 }
 h1{
+
+    color: #893fef;
+}
+h2{
     color: white;
 }
 /* display background color black on navbar scroll */
@@ -83,10 +104,14 @@ h1{
 }
 
 /* skills section */
+.skill-head{
+    padding-top: 2rem;
+}
 .skills .section-text { margin-block-end: 70px; }
 .skills-list {
     display: grid;
     gap: 25px;
+    margin-bottom: 0px;
   }
   
   .skills-item .wrapper {
@@ -136,19 +161,56 @@ h1{
     border: 1px solid #008000;
 }
 
-/* social media icons styling */
-.social-icons {
-    font-size: 36px;
-    cursor: pointer;
+/* contact styles */
+.contact-head{
+    padding-top: 2rem;
 }
-.fa-facebook:hover,.fa-instagram:hover,.fa-twitter:hover,.fa-linkedin:hover, .fa-twitch:hover {
-    color: #008000;
+.btn{
+    background-color: var(--orange-soda) !important;
+    color: var(--white) !important;
+    font-family: var(--ff-barlow);
+    font-size: var(--fs-5);
+    width: 100%;
+    padding: 10px;
+    border-radius: var(--radius-5);
+    transition: var(--transition-2);
 }
-.fab {
-    color: #000000;
-}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .contact-item:not(:last-child) { margin-block-end: 20px; }
+  
+  .contact-icon {
+    background-color: var(--glaucous);
+    font-size: 2.4rem;
+    padding: 20px;
+    border-radius: 50%;
+  }
+  
+  .contact-item-title {
+    color: var(--white);
+    font-family: var(--ff-barlow);
+    font-size: var(--fs-4);
+    font-weight: var(--fw-600);
+  }
+  
+  .contact-item-link { transition: var(--transition-1); }
+  
+  .contact-item-link:not(address):is(:hover, :focus) { color: var(--white); }
+  
+
 /* footer styling */
+.copyright-link, .footer-link{
+    color: white;
+}
 #footer {
     background-color: #808080;
     text-align: center;
+}
+.container-fluid{
+    padding-bottom: 0.1rem;
 }

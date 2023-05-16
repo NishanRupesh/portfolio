@@ -14,6 +14,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow:wght@600;700&family=Open+Sans:wght@400;500;700&family=Poppins:wght@400;600&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
@@ -33,7 +36,7 @@
                         <a class="nav-link" href="#about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#services">Skills</a>
+                        <a class="nav-link" href="#skills">Skills</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#contact">Contact</a>
@@ -57,7 +60,7 @@
 
     <!-- about section-->
     <section id="about">
-        <div class="container mt-4 pt-4">
+        <div class="container pt-4">
             <h1 class="text-center">About Me</h1>
             <div class="row mt-4">
                 <div class="col-lg-4">
@@ -65,8 +68,8 @@
                 </div>
 
                 <div class="col-lg-8">
-                    <p> As an aspiring developer, I am constantly honing my skills in HTML, CSS, JavaScript, MySQL, and Swing.
-                    </p>
+                    <h2> As an aspiring developer, I am constantly honing my skills in HTML, CSS, JavaScript, MySQL, and Swing.
+                    </h2>
                     <div class="row mt-3">
                     </div>
                     <div class="row mt-3">
@@ -79,9 +82,9 @@
     </section>
 
     <!-- skills section-->
-    <section id="section skills">
+    <section id="skills">
         <div class="container">
-            <h1 class="text-center">Skills</h1>
+            <h1 class="text-center skill-head">Skills</h1>
             <ul class="skills-list">
 
                 <li class="skills-item">
@@ -152,39 +155,40 @@
 
     <!-- contact section-->
     <section id="contact">
-        <div class="container mt-3 contactContent">
-            <h1 class="text-center">Contact Me</h1>
-
-            
-
+        <div class="container contactContent">
+            <h1 class="text-center contact-head">Contact Me</h1>
                 <div class="col-lg-6">
                     <!-- form fields -->
                     <form>
                         <input type="text" class="form-control form-control-lg" placeholder="Name">
                         <input type="email" class="form-control mt-3" placeholder="Email">
-                        <input type="text" class="form-control mt-3" placeholder="Subject">
                         <div class="mb-3 mt-3">
-                            <textarea class="form-control" rows="5" id="comment" name="text" placeholder="Project Details"></textarea>
+                            <textarea class="form-control" rows="5" id="comment" name="text" placeholder="Message"></textarea>
                         </div>
                     </form>
-                    <button type="button" class="btn btn-success mt-3">Contact Me</button>
-                    
-                </div>
+                    <button type="button" class="btn mt-3">Submit Message</button>
+                  </div>
 
-            </div>
+            
         </div>
     </section>
     <!-- footer section-->
     <footer id="footer">
         <div class="container-fluid">
             <!-- social media icons -->
-            <div class="social-icons mt-4">
-                <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
-                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
-                <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://www.twitch.tv/" target="_blank"><i class="fab fa-twitch"></i></a>
-            </div>
+            <p class="copyright">
+              &copy; 2023 <a href="#" class="copyright-link">Nishan Rupesh</a> All Rights Reseverd
+            </p>
+      
+            <ul class="footer-list">
+              <li>
+                <a href="#" class="footer-link">Terms & Condition</a>
+              </li>
+      
+              <li>
+                <a href="#" class="footer-link">Privacy Policy</a>
+              </li>
+            </ul>
         </div>
     </footer>
 
